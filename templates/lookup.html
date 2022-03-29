@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IP = {{ sourceIP }}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body align=center class="bg" id="bg">
+    <div class="button-container">
+        <div>
+            <button class="custom-btn" id="button" onclick="toggleDM()">
+                Toggle Light/Dark Mode
+            </button>
+        </div>
+    </div>
+        <div class="flex-container container" id="container">
+            <div>
+                <h1>
+                    Lookup returns
+                </h1>
+                <h2>
+                    {{ sourceIP }}
+                </h2>
+                <div>
+                    <p>
+                        Country: {{ sourceCountry }}
+                    </p>
+                </div>
+                <p>
+                    ISP: {{ sourceISP }}
+                </p>
+            </div>
+        </div>
+    </body>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</html>
