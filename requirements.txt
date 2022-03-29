@@ -1,0 +1,5 @@
+country_converter==0.7.4
+Flask==2.0.1
+flask_api==3.0.post1
+ipwhois==1.2.0
+nmap==0.0.1
